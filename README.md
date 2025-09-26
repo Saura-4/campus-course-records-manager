@@ -25,20 +25,21 @@ The system demonstrates a wide array of Java features, from core object-oriented
 ### Steps:
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
-   cd CCRM
+   git clone https://github.com/Saura-4/campus-course-records-manager.git
+
+   cd campus-course-records-manager
    ```
 
 2. **Compile the project from the command line:**
    Navigate to the `src` directory and run:
    ```bash
-   javac edu/ccrm/cli/MainMenu.java
+   javac -d "bin" -sourcepath "src" src/edu/ccrm/cli/MainMenu.java
    ```
 
 3. **Run the application:**
    From the `src` directory, execute the main class:
    ```bash
-   java edu.ccrm.cli.MainMenu
+   java -cp "bin" edu.ccrm.cli.MainMenu
    ```
 
 ---
@@ -136,11 +137,3 @@ Assertions are used in this project to validate assumptions about the program's 
 # From the command line
 java -cp bin -ea edu.ccrm.cli.MainMenu
 
-# In Eclipse, you can add this to the VM arguments in the Run Configuration.
-```
-
----
-<!--
-## 9. Acknowledgements
-This project was generated with the assistance of GitHub Copilot, an advanced AI programming assistant.
--->
